@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack -d --watch",
-    "start": "node ./server/index.js",
+    "start": "node ./server/app.js",
     "build": "webpack -p",
     "react-dev": "webpack -d --watch",
-    "server-dev": "nodemon server/index.js"
+    "server-dev": "nodemon server/app.js"
   },
   "repository": {
     "type": "git",
@@ -19,26 +19,32 @@
     "Portfolio",
     "Design",
     "Website",
-    "React"
+    "Preact"
   ],
-  "author": "Varun Verma",
+  "author": {
+    "name": "Varun Verma",
+    "email": "hi@varunest.com",
+    "url": "https://varunest.com"
+  },
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/varunest/Creativeb.in/issues"
   },
   "homepage": "https://github.com/varunest/Creativeb.in#readme",
   "dependencies": {
-    "babel-loader": "^8.0.4",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "preact": "^8.4.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
+    "babel-loader": "^8.0.4",
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-preact": "^7.0.0",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
   }
